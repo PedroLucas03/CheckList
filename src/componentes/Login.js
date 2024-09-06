@@ -65,10 +65,9 @@ function Login () {
 
 
   return(
-
-    <div className="container">
-    <div className="form-container sign-up">
-    <form>
+    <div>
+      <div className="container">
+      <div className="form-container sign-up">
     <h2>Usuários</h2>
     <br/>
     <label>Email:</label>
@@ -88,9 +87,9 @@ function Login () {
     />
     <button onClick={logarUsuario}>Login</button>
     <button><Link to="/cadastrar">Cadastrar</Link></button>
-    </form>
     </div>
     </div>
+  </div>
 
   )
 }

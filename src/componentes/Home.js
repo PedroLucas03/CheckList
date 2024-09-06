@@ -106,7 +106,7 @@ function Home() {
 
   return (
     <div className="container">
-    <div className="form-container sign-up">
+
       <div>
       {usuario && (
         <div>
@@ -139,7 +139,7 @@ function Home() {
         onChange={(e) => setTitulo(e.target.value)}
       />
       </form>
-      <button onClick={adicionarTarefa}>Inserir</button>
+      <button className="i" onClick={adicionarTarefa}>Inserir</button>
       <button onClick={editarTarefa}>Editar</button>
 
 
@@ -160,7 +160,6 @@ function Home() {
 
         </div>
       </div>
-    </div>
 
   );
 }

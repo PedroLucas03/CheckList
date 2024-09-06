@@ -44,8 +44,9 @@ function Cadastrar () {
 
   return(
     <div>
-
-    <h2>Usuários</h2>
+  <div className="container">
+  <div className="form-container sign-up">
+    <h2>Cadastrar</h2>
 
     <label>Email:</label>
     <input
@@ -64,8 +65,8 @@ function Cadastrar () {
     />
 
     <button onClick={novoUsuario}>Cadastrar</button>
-    
-
+    </div>
+    </div>
 
 </div>
   )
