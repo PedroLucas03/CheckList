@@ -1,11 +1,13 @@
 import { auth } from '../firebaseConection'; 
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom'; 
-import './styles/Cadastrar.css';
+
 
 import {
   createUserWithEmailAndPassword,
 } from 'firebase/auth';
+
+
 
 function Cadastrar () {
 
@@ -13,6 +15,10 @@ function Cadastrar () {
   const [senha, setSenha] = useState('');
   const navigate = useNavigate();
 
+
+
+   
+   
   async function novoUsuario () {
     await createUserWithEmailAndPassword(auth, email, senha)
     .then(()=>{
@@ -33,12 +39,14 @@ function Cadastrar () {
     
   }
 
+
+
+
   return(
-    <div className="container">
-    <div className="form-container sign-up">
-    <form>
-    <h2>Cadastro de Usuário</h2>
-    <br/>
+    <div>
+
+    <h2>Usuários</h2>
+
     <label>Email:</label>
     <input
       type="email"
@@ -56,11 +64,12 @@ function Cadastrar () {
     />
 
     <button onClick={novoUsuario}>Cadastrar</button>
-    </form>
-    </div>
-    </div>
+    
 
+
+</div>
   )
 }
   
+
 export default Cadastrar;
